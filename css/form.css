@@ -1,0 +1,63 @@
+@import url("build.css");
+@import url("font-awesome-4.5.0/css/font-awesome.min.css");
+.form-modal .close 
+{
+	opacity: 1; 
+}
+.form-modal .close .icon-clear 
+{
+    position: absolute;
+    right: 0;
+    top: -28px;
+    -webkit-transition: all 0.5s ease-out 0s;
+    -ms-transition: all 0.5s ease-out 0s;
+    -moz-transition: all 0.5s ease-out 0s;
+    transition: all 0.5s ease-out 0s;
+} 
+	
+.form-modal form, .form-modal .modal-header {
+	padding:6%;
+}
+.form-modal .close .icon-clear:before 
+{
+    content: 'clear';
+    color: white;
+    font-weight: normal; 
+}
+.form-modal .close .icon-clear:hover 
+{
+    opacity: 0.5; 
+}
+.form-modal {
+	padding-top: 30px !important; 
+}
+
+.form-modal .wrap-item-content {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 15px; 
+}
+
+.form-modal .modal-body {
+  padding: 0px; 
+}
+
+textarea {
+    resize: none;
+}
+
+#map{
+	height:250px;
+	width:100%;
+	border:0;
+}
+@media (min-width: 768px){
+	#map {
+		height: 300px !important;
+	}
+}
+@media (min-width: 1025px){
+	#map{
+		height: 400px !important;
+	}
+}

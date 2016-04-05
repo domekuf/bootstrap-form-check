@@ -1,0 +1,377 @@
+
+<div class="CandidaTab" id="tab-0">
+	<div class="form-group row">
+		<div class="col-xs-12">
+			<input type="text" name="par[1]" class="nonEmptyField form-control input-lg" id="iNome" placeholder="[NOME]">
+		</div>
+	</div>
+	<div class="form-group row">
+		<div class="col-xs-12">
+			<input type="text" name="par[2]" class="nonEmptyField form-control input-lg" id="iCognome" placeholder="[COGNOME]">
+		</div>
+	</div>
+	<div class="form-group row">
+		<div class="col-xs-12 col-sm-8">
+			<input type="text" name="par[0]" class="nonEmptyField form-control input-lg" id="iUsername" placeholder="[E_MAIL]">
+		</div>
+		<div class="col-xs-12 col-sm-4">
+		    <div class="input-lg checkbox-inline checkbox checkbox-primary">
+                <input type="checkbox" name="utente_registrato_checkbox" id="utente_registrato_checkbox" value="0">
+                <label for="utente_registrato_checkbox">
+                    Registrato
+                </label>
+            </div>
+		</div>
+	</div>
+	<div style="display:none" class="form-group row" id="iPasswordRow">
+		<div class="col-xs-12">
+			<input type="password" name="_password" class="form-control input-lg" id="iPassword" placeholder="[PASSWORD]">
+		</div>
+	</div>
+	<div class="form-group row">
+	<div class="col-xs-12">
+			<input type="text" name="par[5]" class="form-control input-lg" id="iCellulare" placeholder="[CELLULARE]">
+		</div>
+	</div>
+</div>
+<div class="CandidaTab" id="tab-1">
+	<div class="form-group row">
+	<div class="col-xs-8">
+			<input type="text" name="par[7]" class="form-control input-lg" id="iIndirizzo" placeholder="[INDIRIZZO]">
+		</div>
+		<div class="col-xs-4">
+			<input type="text" name="par[8]" class="form-control input-lg" id="iCap" placeholder="[CAP]">
+		</div>
+	</div>
+	<div class="form-group row">
+	<div class="col-xs-8">
+			<input type="text" name="par[9]" class="form-control input-lg" id="iCitta" placeholder="[CITTA]">
+		</div>
+		<div class="col-xs-4">
+			<input type="text" name="par[10]" class="form-control input-lg" id="iProvincia" placeholder="[PROVINCIA]">
+		</div>
+	</div>
+	<div class="form-group row">
+		<div class="col-xs-12 col-sm-4">
+			<label  class="input-lg">[DATA_DI_NASCITA]</label>
+			<input type="hidden" name="par[11]" class="form-control input-lg datepicker" id="iDataNascita" placeholder="[DATA_DI_NASCITA]">
+		</div>
+		<div id="date-div" class="col-xs-12 col-sm-8"></div>
+	</div>
+	<div class="form-group row">
+		<div class="col-xs-12 col-sm-4">
+			<label class="input-lg">[GENERE]</label>
+		</div>
+		<div class="col-xs-12 col-sm-8">
+            <div class="input-lg checkbox-inline checkbox checkbox-primary">
+                <input type="radio" name="par[12]" id="iSessoM" value="M" checked>
+                <label for="iSessoM">
+                    M
+                </label>
+            </div>
+			<div class="input-lg checkbox-inline checkbox checkbox-danger">
+                <input type="radio" name="par[12]" id="iSessoF" value="F">
+                <label for="iSessoF">
+                    F
+                </label>
+            </div>
+		</div>
+	</div>
+</div>
+
+<div class="CandidaTab" id="tab-2">
+	<div class="form-group row">
+		<div class="col-xs-12">
+			<select name="titolo_studio" id="titolo_studio" class="form-control input-lg">
+				<option value="noone">Nessun titolo di studio</option>
+				<option value="diploma">Diploma</option>
+				<option value="laurea">Laurea</option>
+			</select>
+		</div>
+	</div>
+	<div style="visibility:hidden" id="noone">
+		<div class="form-group row">
+			<div class="col-xs-12">
+				<input type="text" name="noone" class="form-control input-lg" id="iNoone">
+			</div>
+		</div>
+		<div class="form-group row">
+			<div class="col-xs-12">
+				<input type="tel" name="noone_" class="form-control input-lg" id="iNoone_">
+			</div>
+		</div>
+	</div>
+	<div id="diploma">
+		<div class="form-group row">
+			<div class="col-xs-12">
+				<input type="text" name="par[14]" class="form-control input-lg" id="iDiplomaIn" placeholder="Diploma in">
+			</div>
+		</div>
+		
+		<div class="form-group row">
+			<div class="col-xs-12">
+				<input type="tel" name="par[13]" class="form-control input-lg" id="iVotoDiploma" placeholder="Voto Diploma">
+			</div>
+		</div>
+	</div>
+	
+	<div id="laurea">
+		<div class="form-group row">
+			<div class="col-xs-12">
+				<input type="text" name="par[17]" class="form-control input-lg" id="iLaureaIn" placeholder="Laurea in">
+			</div>
+		</div>
+		
+		<div class="form-group row">
+			<div class="col-xs-8">
+				<input type="tel" name="par[15]" class="form-control input-lg" id="iVotoLaurea" placeholder="Voto di Laurea">
+			</div>
+			<div class="col-xs-4">
+				<div class="input-lg  checkbox checkbox-inline  checkbox-primary ">
+					<input class="styled"  type="checkbox" name="par[16]" id="iLodeLaurea" placeholder="LodeLaurea" value="Y">
+					<label for="iLodeLaurea">Lode</label>
+				</div>
+					<input class=""  type="hidden" name="par[16]"id="iLodeLaureaN" placeholder="LodeLaurea" value="N">
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<div class="CandidaTab" id="tab-3">
+<div class="form-group row">
+<div class="col-xs-12">
+		<select name="par[18]" class="form-control input-lg" id="iInglese">		
+			<option value="">Livello Inglese</option>
+			[OPT_LINGUA]
+		</select>
+	</div>
+</div>
+<div class="form-group row">
+<div class="col-xs-12">
+		<input type="text" name="par[19]" class="form-control input-lg" id="iIngleseEstero" placeholder="Esperienza inglese all&rsquo;estero">
+	</div>
+</div>
+<div class="form-group row">
+<div class="col-xs-12">
+		<select name="par[20]" class="form-control input-lg" id="iFrancese">	
+			<option value="">Livello Francese</option>
+			[OPT_LINGUA]
+		</select>
+	</div>
+</div>
+<div class="form-group row">
+<div class="col-xs-12">
+		<input type="text" name="par[21]" class="form-control input-lg" id="iFranceseEstero" placeholder="Esperienza francese all&rsquo;estero">
+	</div>
+</div>
+
+<div class="form-group row">
+	<div class="col-xs-8">
+		<input type="text" name="par[23]" class="form-control input-lg" id="iAltraLinguaDesc" placeholder="Specificare Altra Lingua">
+	</div>
+	<div class="col-xs-4">
+		<select name="par[22]" class="form-control input-lg" id="iAltraLingua">
+			<option value="">Livello</option>
+			[OPT_LINGUA]
+		</select>
+	</div>
+</div>
+<div class="form-group row">
+	<div class="col-xs-12">
+		<input type="text" name="par[24]" class="form-control input-lg" id="iAltraLinguaEstero" placeholder="Esperienza altra lingua all&rsquo;estero">
+	</div>
+</div>
+</div>
+
+<div class="CandidaTab" id="tab-4">
+<div class="form-group row">
+	<div class="col-xs-12 col-sm-6">
+		<input type="text" name="par[25]" class="form-control input-lg" id="iUltEspLav" placeholder="Ultima esperienza lavorativa">
+	</div>
+	<div class="col-xs-12 col-sm-6">
+		<input type="tel" name="par[26]" class="form-control input-lg number-only" id="iUltEspLavAnni" placeholder="Durata in anni">
+	</div>
+</div>
+<div class="form-group row">
+	<div class="col-xs-12 col-sm-6">
+		<input type="text" name="par[27]" class="form-control input-lg" id="iEspPiuSignificativa" placeholder="Esperienza pi&ugrave; significativa">
+	</div>
+	<div class="col-xs-12 col-sm-6">
+		<input type="tel" name="par[28]" class="form-control input-lg number-only" id="iEspPiuSignifAnni" placeholder="Durata in anni">
+	</div>
+</div>
+<div class="form-group row">
+	<div class="col-xs-12 col-sm-6">
+		<div class="input-lg checkbox checkbox-inline  checkbox-primary ">
+			<input class="styled"  type="checkbox" name="par[29]" id="iPatente" value="Y">
+            <label for="iPatente">Patente</label>
+		</div>
+			<input class=""  type="hidden" name="par[29]" id="iPatenteN" value="N">
+	</div>
+	<div class="col-xs-12 col-sm-6">
+		<div class="input-lg checkbox checkbox-inline  checkbox-primary ">
+			<input class="styled"  type="checkbox" name="par[30]" id="iAutomunito" value="Y">
+            <label for="iAutomunito">Automunito</label>
+		</div>
+			<input class=""  type="hidden" name="par[30]" id="iAutomunitoN" value="N">
+	</div>
+</div>
+<div class="form-group row">
+	<div class="col-xs-12 col-sm-6">
+		<div class="input-lg checkbox checkbox-inline  checkbox-primary ">
+			<input class="styled"  type="checkbox" name="par[32]" id="iCategorieProtette" value="Y">
+            <label for="iCategorieProtette">CategorieProtette</label>
+		</div>
+			<input class=""  type="hidden" name="par[32]" id="iCategorieProtetteN" value="N">
+	</div>
+	<div class="col-xs-12 col-sm-6">
+		<select name="par[31]" id="iCittadinanza" class="form-control input-lg">
+		<option value="" >Cittadinanza</option>
+			[OPT_CITTADINANZA]
+		</select>
+	</div>
+</div>
+<div class="form-group row">
+	<div class="col-xs-12 col-sm-6">
+		<label class="form-control-label">Disponibile a:</label>
+	</div>
+	<div class="col-xs-12 col-sm-6">
+		<div class="input-lg checkbox checkbox-inline  checkbox-primary ">
+			<input class="styled"  type="checkbox" name="par[33]" id="iTrasferte" value="Y">
+            <label for="iTrasferte">Trasferte</label>
+		</div>
+			<input class=""  type="hidden" name="par[33]" id="iTrasferteN" value="N">
+	</div>
+	<div class="col-xs-12 col-sm-6">
+		<div class="input-lg checkbox checkbox-inline  checkbox-primary ">
+			<input class="styled"  type="checkbox" name="par[34]" id="iNotturno" value="Y">
+            <label for="iNotturno">Notturno</label>
+		</div>
+			<input class=""  type="hidden" name="par[34]" id="iNotturnoN" value="N">
+	</div>
+	<div class="col-xs-12 col-sm-6">
+		<div class="input-lg checkbox checkbox-inline  checkbox-primary ">
+			<input class="styled"  type="checkbox" name="par[35]" id="iTurni" value="Y">
+            <label for="iTurni">Turni</label>
+		</div>
+			<input class=""  type="hidden" name="par[35]" id="iTurni" value="N">
+	</div>
+	<div class="col-xs-12 col-sm-6">
+		<div class="input-lg checkbox checkbox-inline  checkbox-primary ">
+			<input class="styled"  type="checkbox" name="par[36]" id="iWeekend" value="Y">
+            <label for="iWeekend">Weekend</label>
+		</div>
+			<input class=""  type="hidden" name="par[36]" id="iWeekend" value="N">
+	</div>
+	<div class="col-xs-12 col-sm-6">
+		<div class="input-lg checkbox checkbox-inline  checkbox-primary ">
+			<input class="styled"  type="checkbox" name="par[37]" id="iStage" value="Y">
+            <label for="iStage">Stage</label>
+		</div>
+			<input class=""  type="hidden" name="par[37]" id="iStage" value="N">
+	</div>
+	<div class="col-xs-12 col-sm-6">
+		<div class="input-lg checkbox checkbox-inline  checkbox-primary ">
+			<input class="styled"  type="checkbox" name="par[38]" id="iTempoDeterminato" value="Y">
+            <label for="iTempoDeterminato">Tempo Determinato</label>
+			<input class=""  type="hidden" name="par[38]" id="iTempoDeterminato" value="N">
+		</div>
+	</div>
+	<div class="col-xs-12 col-sm-6">
+		<div class="input-lg checkbox checkbox-inline  checkbox-primary ">
+			<input class="styled"  type="checkbox" name="par[39]" id="iCollaborazini" value="Y">
+            <label for="iCollaborazini">Collaborazioni</label>
+			<input class=""  type="hidden" name="par[39]" id="iCollaborazini" value="N">
+		</div>
+	</div>
+</div>
+
+</div>
+
+<div class="CandidaTab" id="tab-5">
+<div class="form-group row">
+	<div class="col-xs-12">
+		<textarea name="par[40]" class="form-control input-lg" rows="3" id="iLetteraPresentazione" placeholder="Lettera di Presentazione"></textarea>
+	</div>
+</div>
+<div class="form-group row">
+	<div class="col-xs-12">
+		<label for="fileCurriculum" class="form-control-label input-lg">Allega il curriculum (pdf, doc, docx)</label>
+	</div>
+</div>
+<div class="form-group row  has-warning">
+	<div class="col-xs-12">
+		<input type="file" name="fileCurriculum" class="form-control input-lg" id="fileCurriculum">
+	</div>
+</div> 
+<div class="form-group row">
+	<div class="col-xs-offset-0 col-xs-12">
+		<button  type="button" onclick="check_Candidatura('dati_anagrafici','risultato',get_risultato)" id="cf" class="btn btn-full btn-lg btn-block">Candidati</button>
+	</div>
+</div>
+<div class="form-group row">
+	<div class="col-xs-offset-0 col-xs-12 text-center">
+		<p>
+		Confermi di accettare i Termini del servizio, l'informativa sulla Privacy.
+		</p>
+	</div>
+</div>
+<div class="form-group row">
+	<div class="col-xs-offset-0 col-xs-12 text-center">
+		<p style="color:#bc3c48" id="campo_errore">
+		</p>
+	</div>
+</div>
+<div class="form-group row">
+
+<div style="display:none" class="col-xs-12">
+		<input type="text" name="par[41]" class="form-control input-lg" id="iJobId" placeholder="JobId" value="1008"> <!-- value="[JOB_ID]" -->>
+	</div>
+</div>
+
+<div style="display:none" class="form-group row">
+<div class="col-xs-12">
+		<input type="text" name="par[4]" class="form-control input-lg" id="iCambioDati" placeholder="CambioDati">
+	</div>
+</div>
+<div style="display:none" class="form-group row">
+<div class="col-xs-12">
+		<input type="text" name="par[3]" class="form-control input-lg" id="iCodLingua" placeholder="CodLingua" value="[COD_LINGUA]">
+	</div>
+</div>
+
+<div style="display:none" class="form-group row">
+<div class="col-xs-12">
+		<input type="text" name="par[6]" class="form-control input-lg" id="iCodLingua_" placeholder="CodLingua" value="[COD_LINGUA]">
+	</div>
+</div>
+</div>
+<div id="tab-risultato" style="display:none" class="form-group row">
+	<div class="col-xs-12">
+		<h1 id="risultato">Risultato</h1>
+	</div>
+</div>
+<div style="display:none">
+	<!--Label per il javascript, le ho messe qui per renderle traducibili da Database -->
+	<input name="err0" id="errore_file_allegato" value="[ERRORE_FILE_ALLEGATO]"/>
+	<input name="err1" id="campi_obbligatori_vuoti" value="[CAMPI_OBBLIGATORI_VUOTI]"/>
+	<input name="_lang" value="[LANG]"/>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
